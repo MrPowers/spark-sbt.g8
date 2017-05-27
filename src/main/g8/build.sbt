@@ -1,8 +1,8 @@
-name := $name
+name := $name$
 
-version := $version
+version := $version$
 
-scalaVersion := $scalaVersion
+scalaVersion := $scalaVersion$
 
 //sparkVersion := "2.1.0"
 //
