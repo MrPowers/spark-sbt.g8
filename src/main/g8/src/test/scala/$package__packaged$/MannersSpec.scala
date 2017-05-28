@@ -1,4 +1,4 @@
-package $organization$.$name$
+package $package$
 
 import org.scalatest.FunSpec
 import org.apache.spark.sql.functions._
@@ -12,14 +12,6 @@ class MannersSpec
     with DataFrameComparer {
 
   import spark.implicits._
-
-  describe(".beNice") {
-
-    it("tells you how to treat your mother") {
-      assert(Manners.beNice() === "Be nice to your mother!")
-    }
-
-  }
 
   describe(".happyData") {
 

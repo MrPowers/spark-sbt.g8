@@ -1,4 +1,4 @@
-package $organization$.$name$
+package $package$
 
 import org.apache.spark.sql.SparkSession
 
