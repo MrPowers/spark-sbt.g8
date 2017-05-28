@@ -3,6 +3,8 @@ package $organization$.$name$
 import org.scalatest.FunSpec
 import org.apache.spark.sql.functions._
 import com.github.mrpowers.spark.fast.tests.DataFrameComparer
+import org.apache.spark.sql.types.{StructField, StructType, StringType}
+import org.apache.spark.sql.Row
 
 class MannersSpec
     extends FunSpec
@@ -14,7 +16,7 @@ class MannersSpec
   describe(".beNice") {
 
     it("tells you how to treat your mother") {
-      assert(Fun.beNice() === "Be nice to your mother!")
+      assert(Manners.beNice() === "Be nice to your mother!")
     }
 
   }
@@ -31,11 +33,21 @@ class MannersSpec
 
       val actualDF = sourceDF.transform(Manners.happyData())
 
-      val expectedDF = Seq(
-        ("jose", "data is fun"),
-        ("li", "data is fun"),
-        ("luisa", "data is fun")
-      ).toDF("name", "happy")
+      val expectedData = List(
+        Row("jose", "data is fun"),
+        Row("li", "data is fun"),
+        Row("luisa", "data is fun")
+      )
+
+      val expectedSchema = List(
+        StructField("name", StringType, true),
+        StructField("happy", StringType, false)
+      )
+
+      val expectedDF = spark.createDataFrame(
+        spark.sparkContext.parallelize(expectedData),
+        StructType(expectedSchema)
+      )
 
       assertSmallDataFrameEquality(actualDF, expectedDF)
 
