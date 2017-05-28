@@ -10,4 +10,3 @@ sparkComponents ++= Seq("sql", "hive")
 
 spDependencies += "MrPowers/spark-fast-tests:0.2.0"
 
-
