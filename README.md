@@ -10,12 +10,7 @@ A [Giter8](https://github.com/foundweekends/giter8) template for Spark sbt appli
 
 3. Fill out the project properties on the command line
 
-4. Run the tests to make sure the project was generated correctly.
-
-```
-cd insertProjectName
-sbt test
-```
+4. Run the tests to make sure the project was generated correctly.  `cd` into the top level project directory and then run `sbt test`.
 
 ## Project Properties
 
