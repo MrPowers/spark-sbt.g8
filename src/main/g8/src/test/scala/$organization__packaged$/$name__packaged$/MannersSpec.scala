@@ -2,7 +2,7 @@ package $organization$.$name$
 
 import org.scalatest.FunSpec
 
-class FunSpec extends FunSpec {
+class MannersSpec extends FunSpec {
 
   describe(".beNice") {
 
