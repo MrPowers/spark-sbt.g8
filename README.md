@@ -12,6 +12,8 @@ A [Giter8](https://github.com/foundweekends/giter8) template for Spark sbt appli
 
 4. Run the tests to make sure the project was generated correctly.  `cd` into the top level project directory and then run `sbt test`.
 
+![giter8 gif](giter8.gif "giter8 Screenshot")
+
 ## Project Properties
 
 **name (default: my-cool-project)**
