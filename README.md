@@ -34,6 +34,14 @@ For example, the [top level package of spark-daria](https://github.com/MrPowers/
 
 The project version.  `0.0.1` is usually the best place to start.
 
+## Latest versions of everything
+
+* scalaVersion: 2.11.8
+* sparkVersion: 2.2.0
+* sbt: 0.13.15
+* sbt-spark-package: 0.2.6
+* spark-fast-tests: 0.4.0
+
 ## Contribution
 
 Send pull requests to keep this project updated.
