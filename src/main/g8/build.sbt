@@ -23,4 +23,4 @@ testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oD")
 
 // JAR file settings
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
-// assemblyJarName in assembly := s"${name.value}_${scalaBinaryVersion.value}-${sparkVersion.value}_${version.value}.jar"
+// Add the JAR file naming conventions described here: https://github.com/MrPowers/spark-style-guide#jar-files
