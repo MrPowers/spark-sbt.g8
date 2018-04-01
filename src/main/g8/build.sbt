@@ -1,3 +1,5 @@
+resolvers += "jitpack" at "https://jitpack.io"
+
 name := "$name$"
 
 version := "$version$"
@@ -8,9 +10,9 @@ sparkVersion := "$sparkVersion$"
 
 sparkComponents ++= Seq("sql")
 
-spDependencies += "mrpowers/spark-daria:2.2.0_0.13.0"
+libraryDependencies += "com.github.mrpowers" % "spark-daria" % "v2.3.0_0.18.0"
 
-libraryDependencies += "MrPowers" % "spark-fast-tests" % "2.2.0_0.5.0" % "test"
+libraryDependencies += "com.github.mrpowers" % "spark-fast-tests" % "v2.3.0_0.7.0" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
 fork in Test := true
