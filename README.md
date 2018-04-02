@@ -1,6 +1,6 @@
 # spark-sbt.g8
 
-A [Giter8](https://github.com/foundweekends/giter8) template for Spark sbt applications.
+A [Giter8](https://github.com/foundweekends/giter8) template for Spark SBT applications.
 
 ## Usage
 
@@ -11,6 +11,8 @@ A [Giter8](https://github.com/foundweekends/giter8) template for Spark sbt appli
 3. Fill out the project properties on the command line
 
 4. Run the tests to make sure the project was generated correctly.  `cd` into the top level project directory and then run `sbt test`.
+
+5. (optional) run the shell scripts to add the log4j.properties file and additional options to the `build.sbt` file
 
 ![giter8 gif](giter8.gif "giter8 Screenshot")
 
@@ -26,21 +28,15 @@ The top-level package of the project.  This is typically the organization name f
 
 For example, the [top level package of spark-daria](https://github.com/MrPowers/spark-daria/blob/master/src/main/scala/com/github/mrpowers/spark/daria/sql/ColumnExt.scala#L1) is `com.github.mrpowers.spark.daria.sql`, which consists of the organization name `com.github.mrpowers` and the project name `spark.daria.sql`.
 
-**scalaVersion (default: 2.11.8)**
+**scalaVersion (default: 2.11.12)**
 
-**sparkVersion (default: 2.1.0)**
+**sparkVersion (default: 2.3.0)**
+
+**sbtVersion (default: 0.13.17)**
 
 **version (default: 0.0.1)**
 
 The project version.  `0.0.1` is usually the best place to start.
-
-## Latest versions of everything
-
-* scalaVersion: 2.11.8
-* sparkVersion: 2.2.0
-* sbt: 0.13.15
-* sbt-spark-package: 0.2.6
-* spark-fast-tests: 0.4.0
 
 ## Contribution
 
