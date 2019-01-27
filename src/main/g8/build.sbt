@@ -8,7 +8,7 @@ scalaVersion := "$scalaVersion$"
 
 sparkVersion := "$sparkVersion$"
 
-sparkComponents ++= Seq("sql")
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "$sparkVersion$" % "provided"
 
 libraryDependencies += "com.github.mrpowers" % "spark-daria" % "v2.3.0_0.18.0"
 

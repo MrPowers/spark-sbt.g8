@@ -26,11 +26,11 @@ The project name.  This should be all lowercase and use hyphens.
 
 The top-level package of the project.  This is typically the organization name followed by the project name.
 
-For example, the [top level package of spark-daria](https://github.com/MrPowers/spark-daria/blob/master/src/main/scala/com/github/mrpowers/spark/daria/sql/ColumnExt.scala#L1) is `com.github.mrpowers.spark.daria.sql`, which consists of the organization name `com.github.mrpowers` and the project name `spark.daria.sql`.
+For example, the [top level package of spark-daria](https://github.com/MrPowers/spark-daria/blob/master/src/main/scala/com/github/mrpowers/spark/daria/sql/ColumnExt.scala#L1) is `com.github.mrpowers.spark.daria`, which consists of the organization name `com.github.mrpowers` and the project name `spark.daria`.
 
 **scalaVersion (default: 2.11.12)**
 
-**sparkVersion (default: 2.3.0)**
+**sparkVersion (default: 2.4.0)**
 
 **sbtVersion (default: 0.13.17)**
 
@@ -43,4 +43,3 @@ The project version.  `0.0.1` is usually the best place to start.
 Send pull requests to keep this project updated.
 
 We'll always try to keep this updated with the latest version of Spark and Scala.
-
