@@ -6,8 +6,6 @@ version := "$version$"
 
 scalaVersion := "$scalaVersion$"
 
-sparkVersion := "$sparkVersion$"
-
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "$sparkVersion$" % "provided"
 
 libraryDependencies += "mrpowers" % "spark-daria" % "0.27.1-s_2.11"
