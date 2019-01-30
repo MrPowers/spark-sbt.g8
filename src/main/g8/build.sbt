@@ -1,4 +1,4 @@
-resolvers += "jitpack" at "https://jitpack.io"
+resolvers += "Spark Packages Repo" at "http://dl.bintray.com/spark-packages/maven"
 
 name := "$name$"
 
@@ -10,9 +10,9 @@ sparkVersion := "$sparkVersion$"
 
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "$sparkVersion$" % "provided"
 
-libraryDependencies += "com.github.mrpowers" % "spark-daria" % "v2.3.0_0.18.0"
+libraryDependencies += "mrpowers" % "spark-daria" % "0.27.1-s_2.11"
 
-libraryDependencies += "com.github.mrpowers" % "spark-fast-tests" % "v2.3.0_0.7.0" % "test"
+libraryDependencies += "MrPowers" % "spark-fast-tests" % "0.17.2-s_2.11" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
 // test suite settings
