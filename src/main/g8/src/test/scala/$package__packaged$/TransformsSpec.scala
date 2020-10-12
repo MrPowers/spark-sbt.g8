@@ -6,7 +6,7 @@ import com.github.mrpowers.spark.fast.tests.DataFrameComparer
 import org.apache.spark.sql.types.{StructField, StructType, StringType}
 import org.apache.spark.sql.Row
 
-class MannersSpec
+class TransformsSpec
     extends FunSpec
     with SparkSessionTestWrapper
     with DataFrameComparer {
@@ -23,7 +23,7 @@ class MannersSpec
         ("luisa")
       ).toDF("name")
 
-      val actualDF = sourceDF.transform(Manners.happyData())
+      val actualDF = sourceDF.transform(transforms.happyData())
 
       val expectedData = List(
         Row("jose", "data is fun"),
