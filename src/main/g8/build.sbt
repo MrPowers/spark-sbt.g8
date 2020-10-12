@@ -1,5 +1,3 @@
-resolvers += "Spark Packages Repo" at "http://dl.bintray.com/spark-packages/maven"
-
 name := "$name$"
 
 version := "$version$"
@@ -8,9 +6,8 @@ scalaVersion := "$scalaVersion$"
 
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "$sparkVersion$" % "provided"
 
-libraryDependencies += "mrpowers" % "spark-daria" % "0.35.2-s_2.11"
-
-libraryDependencies += "MrPowers" % "spark-fast-tests" % "0.20.0-s_2.11" % "test"
+libraryDependencies += "com.github.mrpowers" %% "spark-daria" % "0.38.2"
+libraryDependencies += "com.github.mrpowers" %% "spark-fast-tests" % "0.21.3" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
 // test suite settings
