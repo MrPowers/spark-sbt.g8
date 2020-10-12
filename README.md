@@ -16,6 +16,8 @@ A [Giter8](https://github.com/foundweekends/giter8) template for Spark SBT appli
 
 ![giter8 gif](giter8.gif "giter8 Screenshot")
 
+**Important Note**: Use Scala 2.11 for Spark 2 apps and Scala 2.12 for Spark 3 apps (e.g. use Scala 2.11.12 with Spark 2.4.7 and Scala 2.12.12 with Spark 3.0.1).
+
 ## Project Properties
 
 **name (default: my-cool-project)**
