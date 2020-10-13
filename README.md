@@ -32,9 +32,9 @@ For example, the [top level package of spark-daria](https://github.com/MrPowers/
 
 **scalaVersion (default: 2.11.12)**
 
-**sparkVersion (default: 2.4.0)**
+**sparkVersion (default: 2.4.7)**
 
-**sbtVersion (default: 0.13.17)**
+**sbtVersion (default: 1.3.13)**
 
 **version (default: 0.0.1)**
 
