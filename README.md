@@ -4,9 +4,9 @@ A [Giter8](https://github.com/foundweekends/giter8) template for Spark SBT appli
 
 ## Usage
 
-1. Install Giter8 with Homebrew: `brew update && brew install giter8`
+1. Install SBT with Homebrew: `brew install sbt`
 
-2. Start the app generation wizard: `g8 MrPowers/spark-sbt.g8`
+2. Start the app generation wizard: `sbt new MrPowers/spark-sbt.g8`
 
 3. Fill out the project properties on the command line
 
